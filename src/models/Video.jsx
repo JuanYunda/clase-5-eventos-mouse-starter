@@ -2,7 +2,7 @@ import { VideoTexture } from 'three';
 
 export default function Video(props) {
     const video = document.createElement('video');
-    video.src = '/static/2023-04-14 18-04-41.mkv';
+    video.src = '/static/Kimetsu no Yaiba Opening 3.mkv';
     video.crossOrigin = 'anonymous';
     video.loop = true;
     video.muted = true;
@@ -17,8 +17,8 @@ export default function Video(props) {
     return (
         <group {...props} dispose={null} onPointerUp={onHandleVid}>
             <mesh>
-                <planeGeometry args={[16, 8]} />
-                <meshBasicMaterial map={videoTexture} />
+                <planeGeometry args={[12.80, 7.20]} />  
+                <meshBasicMaterial map={videoTexture} opacity={0}/>
             </mesh>
         </group>
     );

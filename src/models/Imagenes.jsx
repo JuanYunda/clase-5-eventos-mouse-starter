@@ -3,11 +3,11 @@ import { TextureLoader } from 'three';
 
 export default function Imagenes(props) {
   const [texture, setTexture] = useState(
-    new TextureLoader().load('/static/image1.jpg')
+    new TextureLoader().load('/static/tanjiro.png')
   );
 
   const onHandleImageClick = () => {
-    const newTexture = new TextureLoader().load('/static/image2.jpg');
+    const newTexture = new TextureLoader().load('/static/papá.png');
     // carga la imagen 2
     setTexture(newTexture);
   };
@@ -15,7 +15,7 @@ export default function Imagenes(props) {
   return (
     <group {...props}>
       <mesh>
-        <planeGeometry args={[8, 8]} />
+        <planeGeometry args={[7.20, 7.20]} />
         <meshBasicMaterial map={texture} />
       </mesh>
       <mesh
