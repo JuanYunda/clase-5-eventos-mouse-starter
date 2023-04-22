@@ -20,6 +20,6 @@ export default function Experience() {
         <Hamburguer scale={0.08}/>*/}
         <Video position-z = {-10}/>
         <Imagenes rotation={[0,Math.PI/2,0]} position-x = {-6.4} position-z={-6.4}/>
-        <YoutubeVideo/>
+        <YoutubeVideo rotation={[0,-Math.PI/2,0]} position-x = {6.4} position-z={-3.6}/>
     </>
 }

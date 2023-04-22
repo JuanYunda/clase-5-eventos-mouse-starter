@@ -10,7 +10,7 @@ export default function YoutubeVideo(props) {
   return (
     <group {...props} dispose={null}>
       <mesh ref={planeRef}>
-        <planeBufferGeometry args={[16, 9]} />
+        <planeBufferGeometry args={[12.80, 7.20]} />
         <meshBasicMaterial>
           <Html>
             {video && (
